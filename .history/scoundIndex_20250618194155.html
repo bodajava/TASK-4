@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="bg-22333c">
+    <div class="smart-app">
+      <div class="login shadow-lg">
+        <h1 class="text-capitalize">smart login system</h1>
+        <div action="" class="form d-flex flex-column">
+          <input
+            class="border border-1 rounded-2"
+            type="text"
+            id="userName"
+            placeholder="Enter your name"
+            autocomplete="off"
+          />
+          <input
+            class="border border-1 rounded-2"
+            type="email"
+            id="userEmail"
+            placeholder="Enter your email"
+            autocomplete="off"
+          />
+          <input
+            class="border border-1 rounded-2"
+            type="password"
+            id="userPass"
+            placeholder="Enter password"
+            autocomplete="off"
+          />
+          <div id="required">
+            <span></span>
+          </div>
+          <button
+            type="submit"
+            onclick="addUser()"
+            class="btn btn-outline-info text-decoration-none"
+          >
+            Sign Up
+          </button>
+          <label for="">
+            You have an account? <a href="index.html">Signin</a></label
+          >
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

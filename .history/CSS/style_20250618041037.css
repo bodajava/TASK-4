@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #24353f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+#item {
+  margin-top: 60px;
+  margin-left: 390px;
+  margin-right: 390px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#item2 {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin-left: 138.75px;
+  margin-right: 138.75px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+h1 {
+  color: #189bb1;
+}
+
+.anchor {
+  text-decoration: none;
+}
+
+.anchor:hover {
+  text-decoration: underline;
+}
+
+.paragraph {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: white;
+}
+
+.paragraph a {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: white;
+}
+
+.form-control {
+  background-color: #24353f;
+  border: 1px solid white;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.form-control::placeholder {
+  color: #a0a0a0;
+}
+
+.form-control:focus {
+  background-color: #24353f;
+  color: #fff;
+  border-color: #189bb1;
+  outline: none;
+  box-shadow: none;
+}
+
+.btnn {
+  text-decoration: none;
+  color: #189bb1;
+}
+
+.btnn:hover {
+  color: white;
+}
+
+#box {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Basic Reset and Body Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Example font, adjust as needed */
+  background-color: #f0f2f5; /* A light background for the page */
+  display: flex; /* Use flexbox for overall page layout */
+  flex-direction: column; /* Stack elements vertically */
+  min-height: 100vh; /* Ensure body takes full viewport height */
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex; /* Use flexbox to align items horizontally */
+  justify-content: space-between; /* Space out left, center, right sections */
+  align-items: center; /* Vertically center items */
+  background-color: #1a1a1a; /* Dark background for the navbar */
+  padding: 10px 20px; /* Padding inside the navbar */
+  color: #fff; /* Default text color for navbar elements */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Navbar Left Section */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between brand and links list */
+}
+
+.nav-brand {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between icon and text */
+}
+
+.nav-brand .icon {
+  font-size: 1.2em; /* Size for the icon */
+}
+
+.nav-links {
+  list-style: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Arrange links horizontally */
+  gap: 15px; /* Space between links */
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.7); /* Lighter color for non-active links */
+  text-decoration: none;
+  padding: 5px 0;
+  transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+.nav-link:hover {
+  color: #fff; /* White on hover */
+}
+
+.nav-link.active {
+  color: #fff; /* White for the active link */
+  font-weight: bold;
+}
+
+/* Navbar Center Section */
+.navbar-center {
+  flex-grow: 1; /* Allow the center section to take available space */
+  text-align: center; /* Center the title text */
+}
+
+.navbar-title {
+  font-size: 1.5em; /* Larger font for the main title */
+  font-weight: bold;
+  color: #fff; /* White color */
+}
+
+/* Navbar Right Section */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between right-aligned elements */
+}
+
+/* Button Styling */
+.btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logout-btn {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff; /* White border for logout */
+}
+
+.logout-btn:hover {
+  background-color: #fff;
+  color: #1a1a1a;
+}
+
+.chrome-btn {
+  background-color: #007bff; /* Example: A blue color for the chrome button */
+  color: #fff;
+  border: 1px solid #007bff; /* Matching border */
+}
+
+.chrome-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  border-color: #0056b3;
+}
+
+/* User Avatar */
+.user-avatar img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* Make it circular */
+  border: 2px solid #fff; /* Small white border around avatar */
+  object-fit: cover; /* Ensure image covers the area */
+}
+
+/* Content Area (below navbar) */
+.content {
+  flex-grow: 1; /* Allows content to take remaining vertical space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.welcome-box {
+  background-color: #3498db; /* A distinct blue for the box */
+  color: #fff;
+  padding: 40px 80px; /* Generous padding */
+  border-radius: 8px;
+  font-size: 2em; /* Large font size */
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

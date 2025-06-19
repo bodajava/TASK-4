@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #24353f;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+#item {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0;
+}
+
+.form-control {
+  border-radius: 5px;
+}
+
+h1 {
+  color: #189bb1;
+}

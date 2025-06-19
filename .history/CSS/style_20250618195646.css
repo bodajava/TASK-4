@@ -1,0 +1,176 @@
+h1 {
+  color: #189bb1;
+}
+
+.anchor {
+  text-decoration: none;
+}
+
+.anchor:hover {
+  text-decoration: underline;
+}
+
+.paragraph {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: white;
+}
+
+.paragraph a {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: white;
+}
+
+.form-control {
+  background-color: #24353f;
+  border: 1px solid white;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.form-control::placeholder {
+  color: #a0a0a0;
+}
+
+.form-control:focus {
+  background-color: #24353f;
+  color: #fff;
+  border-color: #189bb1;
+  outline: none;
+  box-shadow: none;
+}
+
+.btnn {
+  text-decoration: none;
+  color: #189bb1;
+}
+
+.btnn:hover {
+  color: white;
+}
+
+#box {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+#nav {
+  background-color: #24353f !important;
+}
+
+#container {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+#margen {
+  margin-left: 90px;
+  font-size: 25px;
+  line-height: 38px;
+  font-weight: 400;
+  color: white;
+}
+
+ul li {
+  margin-right: 90px;
+  padding-bottom: 10px;
+}
+
+.w-65 {
+  width: 65%;
+}
+.bg-22333c {
+  background-color: #22333c;
+}
+.bg-212529 {
+  background-color: #212529;
+}
+h1 {
+  color: #17a2b8;
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+.smart-app {
+  width: 75%;
+  margin: 10px auto;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login {
+  background: #24353f;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+  width: 70%;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+input {
+  margin: 10px 0;
+  padding: 6px 12px;
+  background-color: #22333c;
+  outline: none;
+  border: 1.5px solid white;
+  border-radius: 15px;
+  color: white;
+}
+.login button {
+  margin: 20px 0;
+  font-size: 16px !important;
+}
+input::placeholder {
+  color: rgb(211, 205, 205);
+  font-weight: lighter;
+}
+input:focus {
+  border-color: #48d2ee !important ;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration-line: underline;
+  color: white;
+}
+
+.logo a {
+  font-size: 20px;
+}
+.logo a:hover {
+  text-decoration-line: none;
+}
+
+.home {
+  height: 80%;
+}
+.toggler-icon {
+  color: #ffffff80;
+}
+.border-ffffff80 {
+  border-color: #ffffff80;
+}
+
+/* less than and = 576px  */
+@media screen and (max-width: 575px) {
+  .smart-app {
+    width: 95% !important;
+  }
+  .login {
+    width: 90%;
+  }
+}
+/* less than 768px  and greater than = 576px  */
+@media screen and (min-width: 576px) and (max-width: 767) {
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/*  Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}

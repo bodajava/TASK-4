@@ -1,0 +1,220 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #24353f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+#item {
+  margin-top: 60px;
+  margin-left: 390px;
+  margin-right: 390px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#item2 {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin-left: 138.75px;
+  margin-right: 138.75px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+h1 {
+  color: #189bb1;
+}
+
+.anchor {
+  text-decoration: none;
+}
+
+.anchor:hover {
+  text-decoration: underline;
+}
+
+.paragraph {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: white;
+}
+
+.paragraph a {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: white;
+}
+
+.form-control {
+  background-color: #24353f;
+  border: 1px solid white;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.form-control::placeholder {
+  color: #a0a0a0;
+}
+
+.form-control:focus {
+  background-color: #24353f;
+  color: #fff;
+  border-color: #189bb1;
+  outline: none;
+  box-shadow: none;
+}
+
+.btnn {
+  text-decoration: none;
+  color: #189bb1;
+}
+
+.btnn:hover {
+  color: white;
+}
+
+#box {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Body base styling - لتجنب أي هوامش افتراضية تؤثر على الناف بار */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* أو أي خط تفضله */
+  background-color: #1a1a1a; /* خلفية سوداء للمطابقة مع خلفية الصورة الظاهرة */
+  height: 100vh; /* لضمان أن الجسم يملأ الشاشة */
+  display: flex; /* لجعل الناف بار في الأعلى */
+  flex-direction: column;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex; /* استخدام Flexbox لترتيب العناصر أفقياً */
+  justify-content: space-between; /* توزيع المساحة بين الأقسام (يسار، وسط، يمين) */
+  align-items: center; /* محاذاة العناصر عمودياً في المنتصف */
+  background-color: #212121; /* لون خلفية الناف بار (داكن جداً مثل الصورة) */
+  padding: 8px 15px; /* مسافة داخلية (بمجرد النظر للصورة) */
+  color: #ffffff; /* لون النص الافتراضي */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* ظل خفيف للناف بار */
+  width: 100%; /* عرض الناف بار بالكامل */
+  box-sizing: border-box; /* لضمان أن الـ padding لا يزيد العرض */
+}
+
+/* Left Section of Navbar */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* مسافة بين "Login" والروابط التالية */
+}
+
+.nav-brand {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px; /* حجم الخط لـ "Login" */
+  display: flex;
+  align-items: center;
+  gap: 5px; /* مسافة بين الأيقونة والنص */
+  padding: 5px 0; /* padding مشابه لـ nav-link */
+}
+
+.nav-brand .icon {
+  font-size: 16px; /* حجم الأيقونة */
+}
+
+.nav-links {
+  list-style: none; /* إزالة النقاط من القائمة */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px; /* المسافة بين روابط القائمة */
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.7); /* لون فاتح قليلاً للروابط غير النشطة */
+  text-decoration: none;
+  font-size: 14px; /* حجم الخط للروابط */
+  padding: 5px 0; /* padding لسهولة الضغط */
+  transition: color 0.2s ease-in-out; /* حركة ناعمة عند التحويم */
+}
+
+.nav-link:hover {
+  color: #ffffff; /* يصبح أبيض بالكامل عند التحويم */
+}
+
+.nav-link.active {
+  color: #ffffff; /* أبيض للرابط النشط */
+  font-weight: bold; /* غامق للرابط النشط */
+}
+
+/* Center Section of Navbar */
+.navbar-center {
+  flex-grow: 1; /* السماح لهذا القسم بأخذ المساحة المتبقية لدفع الأقسام الأخرى */
+  text-align: center; /* توسيط النص "SMART LOGIN" */
+}
+
+.navbar-title {
+  font-size: 16px; /* حجم الخط لـ "SMART LOGIN" */
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 0.5px; /* تباعد الحروف (اختياري) */
+}
+
+/* Right Section of Navbar */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* مسافة بين العناصر في اليمين */
+}
+
+/* Button Styling */
+.btn {
+  padding: 6px 12px; /* مسافة داخلية للأزرار */
+  border: none;
+  border-radius: 3px; /* حواف دائرية خفيفة */
+  cursor: pointer;
+  font-size: 13px; /* حجم الخط للأزرار */
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.logout-btn {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.5); /* إطار أبيض شفاف قليلاً */
+}
+
+.logout-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* خلفية خفيفة عند التحويم */
+}
+
+.chrome-btn {
+  background-color: #4caf50; /* لون أخضر (مختلف قليلاً عن صورة الناف بار، يمكن تعديله) */
+  color: #ffffff;
+  border: 1px solid #4caf50;
+  font-weight: bold; /* لجعله بارزًا مثل الصورة */
+}
+
+.chrome-btn:hover {
+  background-color: #45a049; /* لون أغمق عند التحويم */
+  border-color: #45a049;
+}
+
+/* User Avatar */
+.user-avatar img {
+  width: 28px; /* عرض الصورة */
+  height: 28px; /* ارتفاع الصورة */
+  border-radius: 50%; /* لجعلها دائرية */
+  border: 1px solid #ffffff; /* إطار أبيض رفيع حول الصورة */
+  object-fit: cover; /* لضمان تغطية الصورة للمنطقة دون تشويه */
+}
